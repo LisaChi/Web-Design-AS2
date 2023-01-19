@@ -1,0 +1,237 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: white;
+    grid-area: header;
+    padding: 1em;
+}
+
+nav {
+    grid-area: nav;
+    padding: 1em;
+    display: block;
+    background-color: white;
+}
+
+main {
+    background-color: transparent;
+    grid-area: main;
+}
+
+
+a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: white;
+    font: italic bold 16px/2 cursive, "Lucida Console", "Courier New", monospace;
+}
+
+.mainRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: #049E54;
+    color: black;
+    border-style: outset;
+    border-color: lightgreen;
+    font-size: 1.1em;
+    border-radius: 30%;
+    padding: 15px;
+    margin-top: 1em;
+    display: inline-block;
+    width: 10em;
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header nav"
+        "main main"
+        "footer footer";
+    background-image: url(background.PNG);
+}
+
+footer {
+    background-color: #026033;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: auto auto;
+    justify-items: right;
+    align-items: center;
+    padding: 0 20%;
+}
+
+.on,
+.off {
+    display: none;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+    border-style: inset;
+    border-color: lightgreen;
+    padding: 15px;
+    background-color: #026033;
+}
+
+nav>ul>li {
+    position: relative;
+}
+
+
+ul li:hover {
+    background-color: rgba(0, 0, 0, 0.068);
+    text-decoration: underline black;
+}
+
+header img {
+    height: 5em;
+}
+
+/* HOMEPAGE */
+.banner {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto;
+    background-color: #026033;
+}
+
+.banner h1 {
+    font: italic small-caps bold 16px/2 cursive, "Lucida Console", "Courier New", monospace;
+    padding-top: 0.25em;
+    padding-left: 1em;
+    font-size: 50px;
+    color: white;
+}
+
+.banner img {
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "courseTitle courseTitle"
+        "course1 course2";
+    margin: 2em;
+    color: white;
+    font: italic small-caps bold 16px/2 cursive, "Lucida Console", "Courier New", monospace;
+    text-align: center;
+}
+
+.coursesTitle {
+    grid-area: courseTitle;
+    background-color: #026033;
+    margin-left: 25%;
+    display: block;
+    border-radius: 10px;
+    width: 20em;
+    padding: 0.25em;
+}
+
+.course1 {
+    grid-area: course1;
+    margin: 10px;
+    background-color: #026033;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.course2 {
+    grid-area: course2;
+    margin: 10px;
+    background-color: #026033;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.reviews {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        " reviewh1  reviewh1"
+        "review1 review2"
+        "review3 review4";
+    margin: 2em;
+    color: white;
+    font: italic small-caps bold 16px/2 cursive, "Lucida Console", "Courier New", monospace;
+}
+
+.reviews h1 {
+    grid-area: reviewh1;
+    background-color: #026033;
+    margin-left: 25%;
+    text-align: center;
+    display: block;
+    border-radius: 10px;
+    width: 20em;
+    padding: 0.25em;
+}
+
+.reviews img {
+    width: 5em;
+    height: 5em;
+}
+
+.review1 {
+    grid-area: review1;
+    background-color: #026033;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.review2 {
+    grid-area: review2;
+    background-color: #026033;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.review3 {
+    grid-area: review3;
+    background-color: #026033;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.review4 {
+    grid-area: review4;
+    background-color: #026033;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+}
