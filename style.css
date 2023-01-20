@@ -353,3 +353,52 @@ header img {
     grid-template-rows: auto;  
     padding: 0.5em;
 }
+/* Courses Page */
+.title img{
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 0.5em;
+    margin-left: 3em;
+
+}
+.title{
+    grid-area: title;
+    margin-left: 20%;
+    display: grid;
+    grid-template-columns:25% 50% 25% ;
+    grid-template-rows: auto; 
+    background-color: #026033; 
+    border-radius: 10px;
+    width: 50em;
+    height: 7em;
+}
+.coursesPage {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "title title"
+        "coursePage1 coursePage2";
+    margin: 2em;
+    text-align: center;
+}
+.coursePage1{
+    grid-area: coursePage1;
+    margin: 10px;
+    background-color: #026033;
+    border-radius: 10px;
+    padding: 1em;
+    height: 15em;
+}
+
+.coursePage2 {
+    grid-area: coursePage2;
+    margin: 10px;
+    background-color: #026033;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+    height: 15em;
+}
